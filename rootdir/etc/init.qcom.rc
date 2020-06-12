@@ -396,6 +396,9 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # Default enable uicc_se
+    setprop persist.vendor.radio.uicc_se_enabled true
+    
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
