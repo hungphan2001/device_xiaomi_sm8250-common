@@ -378,3 +378,8 @@ on property:sys.boot_completed=1
     copy /vendor/etc/camera/model/dof_model/capture_policy /data/vendor/camera/model/dof_model/capture_policy
     chown cameraserver audio  /data/vendor/camera/model/dof_model/capture_policy
     chmod 0777 /data/vendor/camera/model/dof_model/capture_policy
+  
+on post-fs-data
+    # Allow system to read measured_fps
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0444 /sys/class/drm/sde-crtc-0/measured_fps
