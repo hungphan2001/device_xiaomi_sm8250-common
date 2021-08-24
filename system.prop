@@ -85,4 +85,11 @@ persist.service.pcsync.enable=0
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
-ro.zram.periodic_wb_delay_hours=24 
+ro.zram.periodic_wb_delay_hours=24
+
+# Notch Overlay
+ro.miui.notch=1
+
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=0
+
