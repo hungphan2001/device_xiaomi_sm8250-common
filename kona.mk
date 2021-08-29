@@ -167,7 +167,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    CameraGo
 
 # Configstore
 PRODUCT_PACKAGES += \
