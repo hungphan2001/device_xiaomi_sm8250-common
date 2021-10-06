@@ -17,12 +17,12 @@
 package org.lineageos.settings.thermal;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.view.MenuItem;
 
-import org.lineageos.settings.utils.FileUtils;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class ThermalActivity extends PreferenceActivity {
+public class ThermalActivity extends CollapsingToolbarBaseActivity {
 
     private static final String TAG_THERMAL = "thermal";
     private static final String THERMAL_SCONFIG = "/sys/class/thermal/thermal_message/sconfig";
@@ -30,21 +30,17 @@ public class ThermalActivity extends PreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        
-        if (FileUtils.fileExists(THERMAL_SCONFIG)) {
-            getFragmentManager().beginTransaction().replace(android.R.id.content,
-                    new ThermalSettingsFragment(), TAG_THERMAL).commit();
-        }
+        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+                new ThermalSettingsFragment(), TAG_THERMAL).commit();
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
+            onBackPressed();
+            return true
+;
         }
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 }
