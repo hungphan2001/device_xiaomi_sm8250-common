@@ -72,7 +72,7 @@ static void set(const std::string& path, const T& value) {
     std::ofstream file(path);
     file << value;
 }
-
+#ifdef FOD
 static bool readBool(int fd) {
     char c;
     int rc;
@@ -91,7 +91,7 @@ static bool readBool(int fd) {
 
     return c != '0';
 }
-
+#endif
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
     for (const auto& class_name : kHALClasses) {
