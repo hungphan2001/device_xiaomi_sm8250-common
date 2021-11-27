@@ -376,6 +376,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
