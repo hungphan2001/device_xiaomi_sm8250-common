@@ -65,3 +65,13 @@ debug.cpurend.vsync=false
 
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
+
+# Venom
+ro.surface_flinger.running_without_sync_framework=true
+
+# DHA Tunning
+ro.config.dha_tunnable=1
+
+# Smoothens UI
+persist.service.lgospd.enable=0
+persist.service.pcsync.enable=0
