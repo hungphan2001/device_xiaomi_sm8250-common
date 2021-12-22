@@ -64,6 +64,17 @@ public class ThermalService extends Service {
     }
 
     @Override
+    public void onDestroy() {
+        if (DEBUG) Log.d(TAG, "Destroying service");
+        unregisterReceiver();
+        mHandler.removeCallbacks(mActivityRunnable);
+        mThermalUtils.setDefaultThermalProfile();
+        mThermalUtils = null;
+        mActivityRunnable = null;
+        super.onDestroy();
+    }
+
+    @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (DEBUG) Log.d(TAG, "Starting service");
         return START_STICKY;
