@@ -219,6 +219,36 @@
         <item>100</item>
     </integer-array>
 
+    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
+    <integer-array name="config_clockTickVibePattern">
+        <item>68</item>
+        <item>15</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback when selecting a day/month/year date of a Calendar -->
+    <integer-array name="config_calendarDateVibePattern">
+        <item>68</item>
+        <item>15</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about booting with safe mode enabled -->
+    <integer-array name="config_safeModeEnabledVibePattern">
+        <item>0</item>
+        <item>1</item>
+        <item>10</item>
+        <item>11</item>
+        <item>250</item>
+        <item>300</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
+    <integer-array name="config_scrollBarrierVibePattern">
+        <item>0</item>
+        <item>8</item>
+        <item>5</item>
+        <item>5</item>
+    </integer-array>
+
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/framework.jar"</item>
