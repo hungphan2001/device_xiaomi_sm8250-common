@@ -128,6 +128,9 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
 
+    # Haptics
+    write /sys/class/leds/vibrator/vmax 28
+
 on boot
     start vendor.sensors
 on property:ro.boot.dp=0x0
@@ -218,6 +221,11 @@ service vendor.lowi /vendor/bin/sscrpcd
    capabilities BLOCK_SUSPEND
 
 on property:sys.boot_completed=1
+    # Haptics
+    write /sys/class/leds/vibrator/index 3
+    write /sys/class/leds/vibrator/duration 100
+    write /sys/class/leds/vibrator/boot_vibrator 1
+
     # Enable ZRAM on boot_complete
     rm /data/unencrypted/zram_swap
     swapon_all /vendor/etc/fstab.qcom
