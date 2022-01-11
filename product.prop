@@ -1,3 +1,6 @@
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Graphics
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
