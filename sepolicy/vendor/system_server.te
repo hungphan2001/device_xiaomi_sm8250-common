@@ -10,3 +10,7 @@ allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
 allow system_server crash_dump:process { getpgid };
 
 allow system_server app_zygote:process { getpgid };
+
+# Allow system_server to read Fast Charging status
+allow system_server vendor_sysfs_battery_supply:file { getattr open read };
+
