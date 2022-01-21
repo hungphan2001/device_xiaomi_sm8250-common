@@ -14,3 +14,4 @@ allow untrusted_app zygote:unix_stream_socket { getopt };
 dontaudit untrusted_app proc_zoneinfo: file { read };
 dontaudit untrusted_app system_lib_file:file { execmod };
 dontaudit untrusted_app proc_version:file { read };
+allow untrusted_app proc_max_map_count:file { read };
