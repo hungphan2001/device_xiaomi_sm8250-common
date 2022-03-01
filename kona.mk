@@ -217,6 +217,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.1 \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.a2dp@1.0 \
     android.hardware.bluetooth.a2dp@1.0.vendor \
@@ -239,7 +240,15 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    android.hardware.camera.device@3.7 \
+    android.hardware.camera.device@3.7.vendor \
+    android.hardware.camera.provider@2.7 \
+    android.hardware.camera.provider@2.7.vendor \
+    android.hardware.camera.metadata@3.6 \
+    android.hardware.camera.metadata@3.6.vendor
+    
 PRODUCT_PACKAGES += \
     libstdc++.vendor
 
