@@ -1,4 +1,4 @@
-<manifest version="2.0" type="device" target-level="5">
+<manifest version="4.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -49,7 +49,7 @@
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
-        <fqname>@4.0::IKeymasterDevice/default</fqname>
+        <fqname>@4.1::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.c2</name>
@@ -62,11 +62,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IOmx/default</fqname>
         <fqname>@1.0::IOmxStore/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
@@ -120,7 +115,7 @@
     <hal format="hidl">
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
-        <fqname>@2.2::IUceService/com.qualcomm.qti.uceservice</fqname>
+        <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
@@ -130,17 +125,24 @@
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IFactory/default</fqname>
+        <fqname>@2.3::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.gnss</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ILocHidlGnss/gnss_vendor</fqname>
+        <fqname>@2.0::ILocHidlGnss/gnss_vendor</fqname>
+        <fqname>@4.0::ILocHidlGnss/gnss_vendor</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAlarm/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.audiohalext</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAudioHalExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_audio</name>
@@ -224,8 +226,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <fqname>@1.6::IImsRadio/imsradio0</fqname>
-        <fqname>@1.6::IImsRadio/imsradio1</fqname>
+        <fqname>@1.7::IImsRadio/imsradio0</fqname>
+        <fqname>@1.7::IImsRadio/imsradio1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
@@ -253,8 +255,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <fqname>@2.4::IQtiRadio/slot1</fqname>
-        <fqname>@2.4::IQtiRadio/slot2</fqname>
+        <fqname>@2.6::IQtiRadio/slot1</fqname>
+        <fqname>@2.6::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
@@ -326,7 +328,7 @@
     <hal format="hidl">
         <name>vendor.qti.ims.factory</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IImsFactory/default</fqname>
+        <fqname>@1.1::IImsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
