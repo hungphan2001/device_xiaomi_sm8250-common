@@ -1,5 +1,13 @@
 <compatibility-matrix version="2.0" type="framework">
 <hal format="hidl" optional="true">
+    <name>android.hardware.biometrics.fingerprint</name>
+    <version>2.0-3</version>
+    <interface>
+        <name>IBiometricsFingerprint</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.bluetooth</name>
     <version>1.0-1</version>
     <interface>
@@ -8,10 +16,10 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>android.hardware.bluetooth.a2dp</name>
-    <version>1.0</version>
+    <name>android.hardware.bluetooth.audio</name>
+    <version>2.0-1</version>
     <interface>
-        <name>IBluetoothAudioOffload</name>
+        <name>IBluetoothAudioProvidersFactory</name>
         <instance>default</instance>
     </interface>
 </hal>
@@ -81,6 +89,16 @@
     <version>1.0-2</version>
     <interface>
         <name>ISap</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>IRadio</name>
+        <instance>slot1</instance>
         <instance>slot2</instance>
     </interface>
 </hal>
@@ -155,7 +173,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>com.qualcomm.qti.uceservice</name>
-    <version>2.0-2</version>
+    <version>2.0-3</version>
     <interface>
         <name>IUceService</name>
         <instance>com.qualcomm.qti.uceservice</instance>
@@ -187,20 +205,12 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-    <version>2.0-1</version>
-    <interface>
-        <name>IGoodixFingerprintDaemon</name>
+   <name>vendor.dolby.hardware.dms</name>
+   <version>2.0</version>
+   <interface>
+        <name>IDms</name>
         <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>vendor.nxp.nxpese</name>
-    <version>1.0</version>
-    <interface>
-        <name>INxpEse</name>
-        <instance>default</instance>
-    </interface>
+   </interface>
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.nxp.nxpnfc</name>
@@ -212,7 +222,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.qti.data.factory</name>
-    <version>2.0-1</version>
+    <version>2.0-3</version>
     <interface>
         <name>IFactory</name>
         <instance>default</instance>
@@ -242,6 +252,14 @@
     <version>1.0</version>
     <interface>
         <name>IAlarm</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.audiohalext</name>
+    <version>1.0</version>
+    <interface>
+        <name>IAudioHalExt</name>
         <instance>default</instance>
     </interface>
 </hal>
@@ -409,7 +427,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.qti.hardware.radio.ims</name>
-    <version>1.0-6</version>
+    <version>1.0-7</version>
     <interface>
         <name>IImsRadio</name>
         <instance>imsradio0</instance>
@@ -445,11 +463,11 @@
 <hal format="hidl" optional="true">
     <name>vendor.qti.hardware.radio.qtiradio</name>
     <version>1.0</version>
-    <version>2.0-4</version>
+    <version>2.0-6</version>
     <interface>
         <name>IQtiRadio</name>
         <instance>slot1</instance>
-         <instance>slot2</instance>
+        <instance>slot2</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -566,7 +584,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.qti.ims.factory</name>
-    <version>1.0</version>
+    <version>1.0-1</version>
     <interface>
         <name>IImsFactory</name>
         <instance>default</instance>
@@ -581,20 +599,12 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
-    <name>vendor.xiaomi.hardware.displayfeature</name>
-    <version>1.0</version>
-    <interface>
-        <name>IDisplayFeature</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>vendor.xiaomi.hardware.fingerprintextension</name>
     <version>1.0</version>
     <interface>
         <name>IXiaomiFingerprint</name>
         <instance>default</instance>
-</interface>
+    </interface>
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.xiaomi.hardware.mlipay</name>
@@ -604,7 +614,7 @@
         <instance>default</instance>
     </interface>
 </hal>
-    <hal format="hidl" optional="true">
+<hal format="hidl" optional="true">
     <name>android.hardware.biometrics.fingerprint</name>
     <version>2.0-3</version>
     <interface>
