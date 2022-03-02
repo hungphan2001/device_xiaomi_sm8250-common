@@ -153,8 +153,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0.vendor \
     android.hardware.bluetooth.audio@2.1 \
     android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    sound_trigger.primary.kona
     android.hardware.bluetooth.audio@2.1.vendor \
     android.hardware.soundtrigger@2.1-impl \
     android.hardware.soundtrigger@2.2-impl \
@@ -238,8 +236,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     android.hardware.camera.device@3.7 \
@@ -248,7 +244,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor \
     android.hardware.camera.metadata@3.6 \
     android.hardware.camera.metadata@3.6.vendor
-    
+
 PRODUCT_PACKAGES += \
     libstdc++.vendor
 
@@ -294,8 +290,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack-service.example \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
@@ -310,7 +305,6 @@ PRODUCT_PACKAGES += \
     libvulkan \
     memtrack.kona \
     vendor.display.config@1.5 \
-    vendor.display.config@1.11.vendor \
     vendor.display.config@1.9 \
     vendor.display.config@1.11 \
     vendor.display.config@1.14 \
@@ -495,9 +489,7 @@ PRODUCT_PACKAGES += \
     libcodec2-hidl-client-defaults@1.2 \
     libcodec2-hidl-defaults@1.2 \
     libcodec2_vndk.vendor  \
-    libdrm.vendor \
-    libcodec2_hidl@1.0.vendor:32 \
-    libcodec2_vndk.vendor:32
+    libdrm.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -533,19 +525,22 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor \
     android.hardware.nfc_snxxx@1.2-service \
-    android.hardware.secure_element_snxxx@1.2-service \
     com.android.nfc_extras \
     libchrome.vendor \
     NfcNci \
     SecureElement \
-    Tag
+    Tag \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
 
 # OMX
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -554,7 +549,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -566,8 +562,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
-    android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr \
     android.hardware.power.stats@1.0-service.mock
 
@@ -597,8 +591,8 @@ PRODUCT_PACKAGES += \
     libxml2
 
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor
 
 # Rootdir
@@ -612,7 +606,6 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
-    init.motor.rc \
     init.nfc.rc \
     init.qcom.power.rc \
     init.qcom.rc \
