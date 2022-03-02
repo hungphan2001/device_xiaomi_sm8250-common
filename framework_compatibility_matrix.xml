@@ -1,13 +1,5 @@
 <compatibility-matrix version="2.0" type="framework">
 <hal format="hidl" optional="true">
-    <name>android.hardware.biometrics.fingerprint</name>
-    <version>2.0-3</version>
-    <interface>
-        <name>IBiometricsFingerprint</name>
-        <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
     <name>android.hardware.bluetooth</name>
     <version>1.0-1</version>
     <interface>
@@ -594,18 +586,6 @@
     <interface>
         <name>IBluetoothAudioProvidersFactory</name>
         <instance>default</instance>
-    </interface>
-</hal>
-<hal format="hidl" optional="true">
-    <name>android.hardware.drm</name>
-    <version>1.0-4</version>
-    <interface>
-        <name>ICryptoFactory</name>
-        <instance>clearkey</instance>
-    </interface>
-    <interface>
-        <name>IDrmFactory</name>
-        <instance>clearkey</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
