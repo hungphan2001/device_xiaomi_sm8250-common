@@ -19,7 +19,6 @@ TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a55
 TARGET_CPU_VARIANT_RUNTIME := cortex-a55
-
 ifeq (,$(filter %_64,$(TARGET_PRODUCT)))
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
@@ -28,7 +27,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 endif
-
 
 # Audio
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
@@ -67,8 +65,14 @@ TARGET_NO_RAW10_CUSTOM_FORMAT := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
 TARGET_USES_DRM_PP := true
-TARGET_USES_GRALLOC1 := true
+# Target Uses Gralloc 4
 TARGET_USES_GRALLOC4 := true
+SOONG_CONFIG_NAMESPACES += qtidisplay
+SOONG_CONFIG_qtidisplay := drmpp gralloc4
+SOONG_CONFIG_qtidisplay_drmpp := true
+SOONG_CONFIG_qtidisplay_gralloc4 := true
+
+# GFX
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 TARGET_USES_VULKAN := true
