@@ -225,7 +225,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
     vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.fm@1.0.vendor
+    vendor.qti.hardware.fm@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0
 
 # Camera
 PRODUCT_PACKAGES += \
