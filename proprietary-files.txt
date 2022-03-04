@@ -837,6 +837,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
 # Soter service (Tencent) - from lmi
 -vendor/app/SoterService/SoterService.apk|939423f0016034cf8676f64d384aafde308f779b
+vendor/lib64/libQTEEConnector_listener.so|bd2d7041c20eeeb85436696377edfbd1d302df49
 
 # Touchfeature
 vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
