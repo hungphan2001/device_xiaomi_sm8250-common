@@ -27,6 +27,7 @@ ro.vendor.qti.va_aosp.support=1
 
 # Graphics
 debug.renderengine.backend=skiaglthreaded
+debug.hwui.skia_atrace_enabled=false
 
 # IMS
 persist.dbg.volte_avail_ovr=1
