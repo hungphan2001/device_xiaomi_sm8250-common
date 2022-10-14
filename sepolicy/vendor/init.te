@@ -18,3 +18,4 @@ set_prop(vendor_init, vendor_radio_prop)
 
 # Allow init to wrtie to sysfs_battery_supply
 allow init sysfs_battery_supply:file { setattr };
+allow init vendor_sysfs_battery_supply:file { setattr };
