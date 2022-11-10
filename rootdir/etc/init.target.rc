@@ -275,6 +275,10 @@ on property:vendor.audio.cit.spkcal.copy=true
     chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk8.bin
     chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_spk8.txt
 
+# Smart Charging
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+
 service audioshell_service /vendor/bin/audioshell_service
     oneshot
     disabled
