@@ -171,13 +171,17 @@ vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_scaler=0
-vendor.display.enable_async_powermode=0
+vendor.display.enable_async_powermode=1
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_posted_start_dyn=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.skip_refresh_rate_change=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_hdr=1
 
 # DRM
 drm.service.enabled=true
@@ -210,6 +214,10 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.layer_caching_active_layer_timeout_ms=1000
+ro.config.avoid_gfx_accel=true
+debug.sdm.support_writeback=0
 
 # Keystore
 ro.hardware.keystore_desede=true
