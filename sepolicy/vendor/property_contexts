@@ -41,15 +41,12 @@ vendor.powerhal.lpm                             u:object_r:vendor_power_prop:s0
 vendor.powerhal.init                            u:object_r:vendor_power_prop:s0
 vendor.powerhal.rendering                       u:object_r:vendor_power_prop:s0
 
-# Radio
-ro.vendor.ril.svlte1x                           u:object_r:vendor_radio_prop:s0
-ro.vendor.ril.svdo                              u:object_r:vendor_radio_prop:s0
-
 # Mlipay
 persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_prop:s0
 
 # RIL
 ro.vendor.ril                                   u:object_r:vendor_public_vendor_default_prop:s0
+vendor.ril.                                     u:object_r:vendor_radio_prop:s0
 
 # Sensor
 persist.sensor.                                 u:object_r:vendor_sensors_prop:s0
