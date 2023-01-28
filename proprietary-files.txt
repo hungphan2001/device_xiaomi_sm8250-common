@@ -1,8 +1,8 @@
-# Unpinned blobs from munch-user 12 RKQ1.200826.002 V13.0.5.0.SLMMIXM release-keys
-# lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# Unpinned blobs from alioth_EEA-user 12 V13.0.9.0.SKHEUXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/lib/libadsp_default_listener.so
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
@@ -22,8 +22,10 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
+vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
+vendor/lib/libsurround_3mic_proc.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
@@ -53,7 +55,9 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
+vendor/lib/libcdsprpc_system.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
@@ -64,6 +68,7 @@ vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
+vendor/lib64/libcdsprpc_system.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
